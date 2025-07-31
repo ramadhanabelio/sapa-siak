@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Report;
 use Illuminate\Http\Request;
+use App\Mail\ReportStatusUpdated;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class ReportController extends Controller
@@ -23,7 +25,7 @@ class ReportController extends Controller
             return response(implode(', ', $validator->errors()->all()), 422);
         }
 
-        Report::create([
+        $report = Report::create([
             'name'    => $request->name,
             'email'   => $request->email,
             'phone'   => $request->phone,
@@ -31,6 +33,8 @@ class ReportController extends Controller
             'message' => $request->message,
             'status'  => Report::STATUS_PENDING,
         ]);
+
+        Mail::to($report->email)->send(new ReportStatusUpdated($report));
 
         return response('OK', 200);
     }
