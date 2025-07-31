@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Report;
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 use App\Mail\ReportStatusUpdated;
 use App\Http\Controllers\Controller;
@@ -11,6 +12,13 @@ use Illuminate\Support\Facades\Validator;
 
 class ReportController extends Controller
 {
+    public function index()
+    {
+        $galleries = Gallery::latest()->get();
+
+        return view('welcome', compact('galleries'));
+    }
+
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [

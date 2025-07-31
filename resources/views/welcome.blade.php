@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Aplikasi Pengaduan Masyarakat Dinas</title>
+    <title>Aplikasi Pengaduan Masyarakat Siak</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <!-- Favicons -->
@@ -29,7 +29,7 @@
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
             <a href="" class="logo d-flex align-items-center">
-                <h1 class="sitename">SIAK</h1>
+                <h1 class="sitename">Aplikasi Pengaduan Masyarakat</h1>
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
@@ -38,6 +38,7 @@
                     <li><a href="#about">Tentang</a></li>
                     <li><a href="#portfolio">Galeri</a></li>
                     <li><a href="#contact">Pengaduan</a></li>
+                    <li><a href="{{ route('login') }}">Masuk</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -51,7 +52,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="hero-content">
-                            <h1>Aplikasi Pengaduan Masyarakat <span>Dinas Siak</span></h1>
+                            <h1>Aplikasi Pengaduan Masyarakat <span> <br>Siak</span></h1>
                             <p>Aplikasi resmi untuk memfasilitasi masyarakat Kabupaten Siak dalam menyampaikan pengaduan
                                 terhadap layanan publik secara cepat, mudah, dan transparan.</p>
                             <div class="hero-actions justify-content-center justify-content-lg-start">
@@ -117,7 +118,7 @@
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Alur Pengaduan</h2>
-                <p>Aplikasi Pengaduan Masyarakat Dinas Siak</p>
+                <p>Aplikasi Pengaduan Masyarakat Siak</p>
             </div>
             <!-- End Section Title -->
             <div class="container">
@@ -207,38 +208,29 @@
             <div class="container">
                 <div class="isotope-layout" data-default-filter="*" data-layout="fitRows"
                     data-sort="original-order">
-                    <div class="portfolio-filters-wrapper">
-                        <ul class="portfolio-filters isotope-filters">
-                            <li data-filter="*" class="filter-active">All Projects</li>
-                            <li data-filter=".filter-branding">Branding</li>
-                            <li data-filter=".filter-web">Web Design</li>
-                            <li data-filter=".filter-print">Print Design</li>
-                            <li data-filter=".filter-motion">Motion</li>
-                        </ul>
-                    </div>
                     <div class="row gy-4 portfolio-grid isotope-container">
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <div class="portfolio-card">
-                                <div class="image-container">
-                                    <img src="img/istana.jpg" class="img-fluid" alt="Brand Identity" loading="lazy">
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <a href="img/istana.jpg" class="glightbox zoom-link"
-                                                title="Brand Identity Project">
-                                                <i class="bi bi-zoom-in"></i>
-                                            </a>
-                                            <a href="" class="details-link" title="View Project Details">
-                                                <i class="bi bi-arrow-right"></i>
-                                            </a>
+                        @foreach ($galleries as $gallery)
+                            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                                <div class="portfolio-card">
+                                    <div class="image-container">
+                                        <img src="{{ asset('storage/' . $gallery->image) }}" class="img-fluid"
+                                            alt="{{ $gallery->title }}" loading="lazy">
+                                        <div class="overlay">
+                                            <div class="overlay-content">
+                                                <a href="{{ asset('storage/' . $gallery->image) }}"
+                                                    class="glightbox zoom-link" title="{{ $gallery->title }}">
+                                                    <i class="bi bi-zoom-in"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="content">
-                                    <h3>Brand Identity</h3>
-                                    <p>Corporate branding and visual identity system</p>
+                                    <div class="content">
+                                        <h3>{{ $gallery->title }}</h3>
+                                        <p>{{ $gallery->desc }}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
                         <!-- End Portfolio Item -->
                     </div>
                     <!-- End Portfolio Grid -->
@@ -253,7 +245,7 @@
             <div class="container section-title">
                 <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
                 <p>Temukan jawaban atas pertanyaan umum seputar proses dan penggunaan Aplikasi Pengaduan Masyarakat
-                    Dinas Siak.</p>
+                    Siak.</p>
             </div>
             <!-- End Section Title -->
             <div class="container">
@@ -455,7 +447,7 @@
                 <div class="col-lg-4">
                     <div class="footer-content">
                         <a href="#" class="logo d-flex align-items-center mb-4">
-                            <span class="sitename">Aplikasi Pengaduan Masyarakat</span>
+                            <span class="sitename">Aplikasi Pengaduan Masyarakat Siak</span>
                         </a>
                         <p class="mb-4">
                             Platform pengaduan resmi dari Pemerintah Kabupaten Siak untuk meningkatkan kualitas
@@ -484,10 +476,11 @@
                         <h4>Tautan Cepat</h4>
                         <ul>
                             <li><a href="#"><i class="bi bi-chevron-right"></i> Beranda</a></li>
-                            <li><a href="#"><i class="bi bi-chevron-right"></i> Tentang Aplikasi</a></li>
-                            <li><a href="#"><i class="bi bi-chevron-right"></i> Cara Pengaduan</a></li>
-                            <li><a href="#"><i class="bi bi-chevron-right"></i> FAQ</a></li>
-                            <li><a href="#"><i class="bi bi-chevron-right"></i> Kontak</a></li>
+                            <li><a href="#how-we-work"><i class="bi bi-chevron-right"></i> Alur Pengaduan</a></li>
+                            <li><a href="#about"><i class="bi bi-chevron-right"></i> Tentang</a></li>
+                            <li><a href="#portfolio"><i class="bi bi-chevron-right"></i> Galeri</a></li>
+                            <li><a href="#faq"><i class="bi bi-chevron-right"></i> FAQ</a></li>
+                            <li><a href="#contact"><i class="bi bi-chevron-right"></i> Pengaduan</a></li>
                         </ul>
                     </div>
                 </div>
@@ -548,7 +541,7 @@
                     <div class="col-lg-6">
                         <div class="copyright">
                             <p>© <span>{{ date('Y') }}</span> <strong class="px-1 sitename">Aplikasi Pengaduan
-                                    Masyarakat</strong> - Kabupaten Siak</p>
+                                    Masyarakat Siak</strong> - DISKOMINFO Siak</p>
                         </div>
                     </div>
                     <div class="col-lg-6 text-lg-end">
