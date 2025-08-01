@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Aplikasi Pengaduan Masyarakat Siak</title>
+    <title>Sistem Aduan dan Pelayanan Aspirasi Siak</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <!-- Favicons -->
@@ -29,16 +29,15 @@
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
             <a href="" class="logo d-flex align-items-center">
-                <h1 class="sitename">Aplikasi Pengaduan Masyarakat</h1>
+                <h1 class="sitename">SAPA-Siak</h1>
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="#hero" class="active">Beranda</a></li>
-                    <li><a href="#how-we-work">Alur Pengaduan</a></li>
-                    <li><a href="#about">Tentang</a></li>
-                    <li><a href="#portfolio">Galeri</a></li>
-                    <li><a href="#contact">Pengaduan</a></li>
-                    <li><a href="{{ route('login') }}">Masuk</a></li>
+                    <li><a href="#beranda" class="active">Beranda</a></li>
+                    <li><a href="#alur-pengaduan">Alur Pengaduan</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#galeri">Galeri</a></li>
+                    <li><a href="#pengaduan">Pengaduan</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -46,29 +45,30 @@
     </header>
 
     <main class="main">
-        <!-- Hero Section -->
-        <section id="hero" class="hero section">
+        <!-- Beranda Section -->
+        <section id="beranda" class="beranda section">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="hero-content">
-                            <h1>Aplikasi Pengaduan Masyarakat <span> <br>Siak</span></h1>
-                            <p>Aplikasi resmi untuk memfasilitasi masyarakat Kabupaten Siak dalam menyampaikan pengaduan
-                                terhadap layanan publik secara cepat, mudah, dan transparan.</p>
-                            <div class="hero-actions justify-content-center justify-content-lg-start">
-                                <a href="#how-we-work" class="btn-primary scrollto">Ajukan Pengaduan</a>
+                        <div class="beranda-content">
+                            <h1>Sistem Aduan dan Pelayanan Aspirasi <span> Siak</span></h1>
+                            <p>Sistem Aduan dan Pelayanan Aspirasi Siak (SAPA-Siak) adalah aplikasi resmi yang
+                                memfasilitasi masyarakat Kabupaten Siak dalam menyampaikan aduan dan aspirasi terkait
+                                layanan publik secara cepat, mudah, dan transparan.</p>
+                            <div class="beranda-actions justify-content-center justify-content-lg-start">
+                                <a href="#pengaduan" class="btn-primary scrollto">Ajukan Pengaduan</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="hero-image">
+                        <div class="beranda-image">
                             <img src="img/siak.png" class="img-fluid floating" alt="" width="70%">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- /Hero Section -->
+        <!-- /Beranda Section -->
 
         <!-- Clients Section -->
         <section id="clients" class="clients section">
@@ -113,12 +113,12 @@
         </section>
         <!-- /Clients Section -->
 
-        <!-- How We Work Section -->
-        <section id="how-we-work" class="how-we-work section">
+        <!-- Alur Pengaduan Section -->
+        <section id="alur-pengaduan" class="alur-pengaduan section">
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Alur Pengaduan</h2>
-                <p>Aplikasi Pengaduan Masyarakat Siak</p>
+                <p>Sistem Aduan dan Pelayanan Aspirasi Siak</p>
             </div>
             <!-- End Section Title -->
             <div class="container">
@@ -168,22 +168,22 @@
                 </div>
             </div>
         </section>
-        <!-- /How We Work Section -->
+        <!-- /Alur Pengaduan Section -->
 
-        <!-- About Section -->
-        <section id="about" class="about section">
+        <!-- Tentang Section -->
+        <section id="tentang" class="tentang section">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Image Column -->
                     <div class="col-lg-6">
-                        <div class="about-image">
-                            <img src="img/istana.jpg" alt="About" class="img-fluid">
+                        <div class="tentang-image">
+                            <img src="img/istana.jpg" alt="Istana Siak" class="img-fluid">
                         </div>
                     </div>
                     <!-- Content Column -->
                     <div class="col-lg-6">
                         <div class="content">
-                            <h2>Apa Itu Aplikasi Pengaduan Masyarakat Siak?</h2>
+                            <h2>Apa Itu Sistem Aduan dan Pelayanan Aspirasi Siak?</h2>
                             <p class="lead">Platform digital yang dikembangkan oleh Pemerintah Kabupaten Siak untuk
                                 meningkatkan partisipasi publik dan akuntabilitas layanan.</p>
                             <p>Aplikasi ini memungkinkan masyarakat menyampaikan keluhan, kritik, atau saran terhadap
@@ -194,10 +194,10 @@
                 </div>
             </div>
         </section>
-        <!-- /About Section -->
+        <!-- /Tentang Section -->
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio section">
+        <!-- Galeri Section -->
+        <section id="galeri" class="galeri section">
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Dokumentasi Kegiatan</h2>
@@ -208,10 +208,10 @@
             <div class="container">
                 <div class="isotope-layout" data-default-filter="*" data-layout="fitRows"
                     data-sort="original-order">
-                    <div class="row gy-4 portfolio-grid isotope-container">
+                    <div class="row gy-4 galeri-grid isotope-container">
                         @foreach ($galleries as $gallery)
-                            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                                <div class="portfolio-card">
+                            <div class="col-lg-4 col-md-6 galeri-item isotope-item filter-branding">
+                                <div class="galeri-card">
                                     <div class="image-container">
                                         <img src="{{ asset('storage/' . $gallery->image) }}" class="img-fluid"
                                             alt="{{ $gallery->title }}" loading="lazy">
@@ -231,21 +231,19 @@
                                 </div>
                             </div>
                         @endforeach
-                        <!-- End Portfolio Item -->
                     </div>
-                    <!-- End Portfolio Grid -->
                 </div>
             </div>
         </section>
-        <!-- /Portfolio Section -->
+        <!-- /Galeri Section -->
 
         <!-- Faq Section -->
         <section id="faq" class="faq section">
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
-                <p>Temukan jawaban atas pertanyaan umum seputar proses dan penggunaan Aplikasi Pengaduan Masyarakat
-                    Siak.</p>
+                <p>Temukan jawaban atas pertanyaan umum seputar proses dan penggunaan Sistem Aduan dan Pelayanan
+                    Aspirasi Siak.</p>
             </div>
             <!-- End Section Title -->
             <div class="container">
@@ -309,8 +307,8 @@
         </section>
         <!-- /Faq Section -->
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact section">
+        <!-- Pengaduan Section -->
+        <section id="pengaduan" class="pengaduan section">
             <!-- Section Title -->
             <div class="container section-title">
                 <h2>Pengaduan</h2>
@@ -321,14 +319,14 @@
             <div class="container">
                 <div class="row align-items-stretch">
                     <div class="col-lg-7 order-lg-1 order-2">
-                        <div class="contact-form-container">
+                        <div class="pengaduan-form-container">
                             <div class="form-intro">
                                 <h2>Ayo lakukan pengaduan</h2>
                                 <p>Isi formulir di bawah ini untuk mengirimkan pengaduan Anda. Pastikan data yang
                                     Anda berikan lengkap dan jelas agar kami dapat menindaklanjuti dengan cepat.</p>
                             </div>
-                            <form action="{{ route('report.store') }}" method="post"
-                                class="php-email-form contact-form">
+                            <form action="{{ route('report.store') }}" method="post" enctype="multipart/form-data"
+                                class="php-email-form pengaduan-form">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-6">
@@ -367,6 +365,11 @@
                                         placeholder="Laporkan apa aspirasi dan kritik anda" required=""></textarea>
                                     <label for="userMessage" class="field-label">Pesan</label>
                                 </div>
+                                <div class="form-field">
+                                    <input type="file" class="form-input file-input" name="image"
+                                        id="userImage" accept="image/*">
+                                    <label for="userImage" class="field-label">Bukti (Opsional)</label>
+                                </div>
                                 <div class="my-3">
                                     <div class="loading">Loading</div>
                                     <div class="error-message"></div>
@@ -381,27 +384,27 @@
                     </div>
 
                     <div class="col-lg-5 order-lg-2 order-1">
-                        <div class="contact-sidebar">
-                            <div class="contact-header">
+                        <div class="pengaduan-sidebar">
+                            <div class="pengaduan-header">
                                 <h3>Hubungi Kami</h3>
                                 <p>Silakan hubungi kami jika Anda memiliki pertanyaan atau membutuhkan bantuan lebih
                                     lanjut.</p>
                             </div>
-                            <div class="contact-methods">
-                                <div class="contact-method">
-                                    <div class="contact-icon">
+                            <div class="pengaduan-methods">
+                                <div class="pengaduan-method">
+                                    <div class="pengaduan-icon">
                                         <i class="bi bi-geo-alt"></i>
                                     </div>
-                                    <div class="contact-details">
+                                    <div class="pengaduan-details">
                                         <span class="method-label">Alamat</span>
                                         <p>R22C+R7Q, Sungai Mempura<br>Kec. Mempura, Kabupaten Siak, Riau 28773</p>
                                     </div>
                                 </div>
-                                <div class="contact-method">
-                                    <div class="contact-icon">
+                                <div class="pengaduan-method">
+                                    <div class="pengaduan-icon">
                                         <i class="bi bi-clock"></i>
                                     </div>
-                                    <div class="contact-details">
+                                    <div class="pengaduan-details">
                                         <span class="method-label">Jam Operasional</span>
                                         <p>
                                             Senin: 07.30 – 16.00<br>
@@ -437,7 +440,7 @@
                 </div>
             </div>
         </section>
-        <!-- /Contact Section -->
+        <!-- /Pengaduan Section -->
 
     </main>
 
@@ -447,7 +450,7 @@
                 <div class="col-lg-4">
                     <div class="footer-content">
                         <a href="#" class="logo d-flex align-items-center mb-4">
-                            <span class="sitename">Aplikasi Pengaduan Masyarakat Siak</span>
+                            <span class="sitename">Sistem Aduan dan Pelayanan Aspirasi Siak</span>
                         </a>
                         <p class="mb-4">
                             Platform pengaduan resmi dari Pemerintah Kabupaten Siak untuk meningkatkan kualitas
@@ -476,11 +479,11 @@
                         <h4>Tautan Cepat</h4>
                         <ul>
                             <li><a href="#"><i class="bi bi-chevron-right"></i> Beranda</a></li>
-                            <li><a href="#how-we-work"><i class="bi bi-chevron-right"></i> Alur Pengaduan</a></li>
-                            <li><a href="#about"><i class="bi bi-chevron-right"></i> Tentang</a></li>
-                            <li><a href="#portfolio"><i class="bi bi-chevron-right"></i> Galeri</a></li>
+                            <li><a href="#alur-pengaduan"><i class="bi bi-chevron-right"></i> Alur Pengaduan</a></li>
+                            <li><a href="#tentang"><i class="bi bi-chevron-right"></i> Tentang</a></li>
+                            <li><a href="#galeri"><i class="bi bi-chevron-right"></i> Galeri</a></li>
                             <li><a href="#faq"><i class="bi bi-chevron-right"></i> FAQ</a></li>
-                            <li><a href="#contact"><i class="bi bi-chevron-right"></i> Pengaduan</a></li>
+                            <li><a href="#pengaduan"><i class="bi bi-chevron-right"></i> Pengaduan</a></li>
                         </ul>
                     </div>
                 </div>
@@ -498,29 +501,29 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="footer-contact">
+                    <div class="footer-pengaduan">
                         <h4>Hubungi Kami</h4>
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <div class="pengaduan-item">
+                            <div class="pengaduan-icon">
                                 <i class="bi bi-geo-alt"></i>
                             </div>
-                            <div class="contact-info">
+                            <div class="pengaduan-info">
                                 <p>Dinas Komunikasi dan Informatika<br>Kabupaten Siak, Riau, Indonesia</p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <div class="pengaduan-item">
+                            <div class="pengaduan-icon">
                                 <i class="bi bi-telephone"></i>
                             </div>
-                            <div class="contact-info">
+                            <div class="pengaduan-info">
                                 <p>(0764) 1234567</p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <div class="pengaduan-item">
+                            <div class="pengaduan-icon">
                                 <i class="bi bi-envelope"></i>
                             </div>
-                            <div class="contact-info">
+                            <div class="pengaduan-info">
                                 <p>pengaduan@siakkab.go.id</p>
                             </div>
                         </div>
@@ -540,8 +543,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="copyright">
-                            <p>© <span>{{ date('Y') }}</span> <strong class="px-1 sitename">Aplikasi Pengaduan
-                                    Masyarakat Siak</strong> - DISKOMINFO Siak</p>
+                            <p>© <span>{{ date('Y') }}</span> <strong class="px-1 sitename">Sistem Aduan dan
+                                    Pelayanan Aspirasi Siak</strong> - DISKOMINFO Siak</p>
                         </div>
                     </div>
                     <div class="col-lg-6 text-lg-end">

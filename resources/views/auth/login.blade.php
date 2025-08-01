@@ -16,7 +16,7 @@
                                             width="100px" />
                                     </div>
                                     <h5 class="card-title text-center pb-0 fs-4">Masuk</h5>
-                                    <p class="text-center text-muted small">Aplikasi Pengaduan Masyarakat Siak</p>
+                                    <p class="text-center text-muted small">Sistem Aduan dan Pelayanan Aspirasi Siak</p>
                                 </div>
                                 <form action="{{ route('login') }}" class="row g-3 needs-validation" novalidate
                                     method="POST">

@@ -14,6 +14,7 @@ class Report extends Model
         'phone',
         'subject',
         'message',
+        'image',
         'status',
     ];
 

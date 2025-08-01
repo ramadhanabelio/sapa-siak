@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Aplikasi Pengaduan Masyarakat Siak | @yield('title')</title>
+    <title>Sistem Aduan dan Pelayanan Aspirasi Siak | @yield('title')</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
     <!-- Favicons -->
@@ -33,7 +33,7 @@
         <div class="d-flex align-items-center justify-content-between">
             <a href="" class="logo d-flex align-items-center">
                 <img src="{{ asset('img/favicon.png') }}" alt="Logo" class="me-3" />
-                <span class="d-none d-lg-block">SIAK</span>
+                <span class="d-none d-lg-block">SAPA-Siak</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div>
@@ -120,7 +120,7 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="copyright">
-            &copy; Copyright <strong><span>Aplikasi Pengaduan Masyarakat Siak</span></strong>. DISKOMINFO Siak
+            &copy; Copyright <strong><span>Sistem Aduan dan Pelayanan Aspirasi Siak</span></strong>. DISKOMINFO Siak
         </div>
         <div class="credits">
             Dikembangkan oleh <a href="" target="_blank">Raudhah</a>
