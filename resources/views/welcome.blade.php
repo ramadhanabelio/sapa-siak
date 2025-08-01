@@ -325,8 +325,8 @@
                                 <p>Isi formulir di bawah ini untuk mengirimkan pengaduan Anda. Pastikan data yang
                                     Anda berikan lengkap dan jelas agar kami dapat menindaklanjuti dengan cepat.</p>
                             </div>
-                            <form action="{{ route('report.store') }}" method="post" enctype="multipart/form-data"
-                                class="php-email-form pengaduan-form">
+                            <form action="{{ route('pengaduan.store') }}" method="post"
+                                enctype="multipart/form-data" class="php-email-form pengaduan-form">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-6">

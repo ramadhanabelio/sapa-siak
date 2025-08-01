@@ -83,9 +83,9 @@
         <ul class="sidebar-nav" id="sidebar-nav">
             <!-- Dashboard -->
             <li class="nav-item">
-                <a class="nav-link {{ request()->routeIs('dashboard') ? '' : 'collapsed' }}"
-                    href="{{ route('dashboard') }}">
-                    <i class="bi {{ request()->routeIs('dashboard') ? 'bi-house-fill' : 'bi-house' }}"></i>
+                <a class="nav-link {{ request()->routeIs('admin.dashboard') ? '' : 'collapsed' }}"
+                    href="{{ route('admin.dashboard') }}">
+                    <i class="bi {{ request()->routeIs('admin.dashboard') ? 'bi-house-fill' : 'bi-house' }}"></i>
                     <span>Dashboard</span>
                 </a>
             </li>

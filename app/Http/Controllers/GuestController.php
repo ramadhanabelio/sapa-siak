@@ -4,19 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\Report;
 use App\Models\Gallery;
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Mail\ReportStatusUpdated;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Validator;
 
-class ReportController extends Controller
+class GuestController extends Controller
 {
     public function index()
     {
         $galleries = Gallery::latest()->get();
-
         return view('welcome', compact('galleries'));
     }
 

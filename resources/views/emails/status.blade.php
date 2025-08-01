@@ -56,7 +56,7 @@
                     <tr>
                         <td
                             style="padding: 20px; text-align: center; background-color: #f1f2f6; color: #636e72; font-size: 12px;">
-                            &copy; {{ date('Y') }} Aplikasi Pengaduan Masyarakat Siak. Semua Hak Dilindungi.
+                            &copy; {{ date('Y') }} Sistem Aduan dan Pelayanan Aspirasi Siak. Semua Hak Dilindungi.
                         </td>
                     </tr>
                 </table>

@@ -8,12 +8,12 @@
         <nav class="mt-2">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="{{ route('dashboard') }}">Dashboard</a>
+                    <a href="{{ route('admin.dashboard') }}">Dashboard</a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a href="{{ route('admin.galleries.index') }}">Galeri</a>
+                    <a href="{{ route('admin.galleries.index') }}">Daftar Galeri</a>
                 </li>
-                <li class="breadcrumb-item active">Tambah</li>
+                <li class="breadcrumb-item active">Tambah Galeri</li>
             </ol>
         </nav>
     </div>
@@ -23,7 +23,7 @@
             <div class="col-lg-8">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Form Tambah Galeri</h5>
+                        <h5 class="card-title">Tambah Galeri</h5>
 
                         @if ($errors->any())
                             <div class="alert alert-danger">

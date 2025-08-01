@@ -36,6 +36,25 @@
                             </div>
                         </a>
                     </div>
+
+                    <div class="col-xxl-4 col-md-6">
+                        <a href="{{ route('admin.galleries.index') }}" class="text-decoration-none">
+                            <div class="card info-card sales-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Galeri</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-image"></i>
+                                        </div>
+                                        <div class="ps-3">
+                                            <h6>{{ $totalGalleries }}</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

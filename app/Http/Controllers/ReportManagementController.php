@@ -30,6 +30,6 @@ class ReportManagementController extends Controller
         $report->status = $request->status;
         $report->save();
 
-        return redirect()->route('admin.reports.index')->with('success', 'Status laporan berhasil diperbarui.');
+        return redirect()->route('admin.reports.index')->with('success', 'Status pengaduan berhasil diperbarui.');
     }
 }
